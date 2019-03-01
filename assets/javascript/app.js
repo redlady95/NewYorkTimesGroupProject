@@ -6,8 +6,13 @@
             //var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cats";
 
 
-            var iniDate = 20120101;
-            var endDate = 20190228;
+            //var iniDate = 20120101;
+            //var endDate = 20190228;
+            var iniDate = $("#ini-date").val().trim()+"0101";
+            iniDate=parseInt(iniDate); 
+            var endDate = $("#end-date").val().trim()+"1231";
+            endDate=parseInt(endDate); 
+            console.log(iniDate, endDate); 
             var query = $("#exampleFormControlInput1").val().trim(); 
             var filter = 'news_desk:("Sports") AND glocations:("NEW YORK CITY")';
             var apiKey = "xD3kkxS8Ju3BRR99VVaBCrAdJVFinyEg";
